@@ -9,6 +9,6 @@ def main():
     message = 'Thanks for visiting!'
     return render_template('main.html', host=hostname, msg=message)
 
-@app.route('/mission', methods=['GET'])
+@app.route('/about', methods=['GET'])
 def mission():
-    return render_template('mission.html')
+    return render_template('about.html')
